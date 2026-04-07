@@ -48,7 +48,7 @@
             });
             
             // Sections to track
-            var sectionsToTrack = ['about', 'skills', 'projects', 'publications', 'gallery', 'contact'];
+            var sectionsToTrack = ['about', 'skills', 'projects', 'publications', 'mentoring', 'gallery', 'contact'];
             var publicationItems = document.querySelectorAll('.pub-item');
             
             // Track when sections come into view
@@ -477,6 +477,7 @@
             .about-text p { text-align: left; }
             .stats-row { grid-template-columns: repeat(2, 1fr); }
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .mentoring-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 600px) {
             .hero-content h1 { font-size: 1.9rem; }
@@ -503,6 +504,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#mentoring">Mentoring</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
@@ -525,10 +527,10 @@
   <div style="background-color: #f4f6f8; border-left: 4px solid #0056b3; padding: 16px 20px; margin: 24px 0; border-radius: 4px; text-align: left;">
     <h4 style="margin-top: 0; margin-bottom: 8px; font-size: 1.1em; color: #333;">🎯 Targeted Roles</h4>
     <p style="margin: 0; font-weight: 500; color: #24292e; font-size: 1.05em;">
-      Semiconductor Processing &middot; Thin Film Engineering &middot; MEMS Engineering &middot; Electrical Hardware R&D &middot; Biosensor Development
+      Postdoctoral Research &middot; Semiconductor Processing &middot; Thin Film Engineering &middot; MEMS Engineering &middot; Biosensor Development
     </p>
     <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #586069;">
-      <em>Actively seeking opportunities at semiconductor companies, medtech firms, and national laboratories in the USA.</em>
+      <em>Open to postdoctoral positions in academic research labs, and industry roles at semiconductor companies, medtech firms, and national laboratories in the USA.</em>
     </p>
   </div>
 </div>
@@ -570,7 +572,7 @@
                         <strong>PhD Candidate in Electrical &amp; Computer Engineering</strong> at the University of Central Florida, conducting research in <a href="https://nanoscience.ucf.edu/rajaraman/" target="_blank" style="color: var(--navy); font-weight: 600;">Dr. Rajaraman's NanoBioSensors &amp; Systems Lab</a>.
                     </p>
                     <p>
-                        My research spans <strong>semiconductor process development</strong> and <strong>MEMS microfabrication</strong> of electrochemical and impedimetric biosensor electrodes on glass and polymer substrates. I execute the full fabrication pipeline: photolithography (Heidelberg DWL, mask aligner), thin film deposition (PVD, CVD, ALD, E-beam evaporation), wet/dry etching, lift-off, and materials characterization (SEM, XPS, AFM, profilometry). I also design multi-layer mixed-signal PCBs in <strong>Altium Designer</strong> for sensor signal acquisition and hardware validation.
+                        My research spans <strong>semiconductor process development</strong> and <strong>MEMS microfabrication</strong> of electrochemical and impedimetric biosensor electrodes on glass and polymer substrates. I execute the full fabrication pipeline: photolithography (Heidelberg DWL, mask aligner), thin film deposition (PVD, CVD, ALD, E-beam evaporation), wet/dry etching, lift-off, and materials characterization (SEM, XPS, AFM, profilometry).
                     </p>
                     <p>
                         <strong>Core competencies:</strong> Cleanroom operations (Class 100), Design of Experiments (DOE), statistical process control, yield optimization (40%→95%), and design for manufacturing (DFM).
@@ -585,7 +587,7 @@
             
             <div class="stats-row">
                 <div class="stat-item">
-                    <div class="stat-number">5</div>
+                    <div class="stat-number">7</div>
                     <div class="stat-label">Publications</div>
                 </div>
                 <div class="stat-item">
@@ -594,11 +596,11 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">2</div>
-                    <div class="stat-label">REU Students Mentored</div>
+                    <div class="stat-label">NSF REU Students Mentored</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">3+</div>
-                    <div class="stat-label">Conference Posters</div>
+                    <div class="stat-label">Conference Presentations</div>
                 </div>
             </div>
         </div>
@@ -765,47 +767,6 @@
                     </div>
                 </article>
                 
-                <article class="project-card">
-                    <img src="./mems_sensor.png" alt="Integrated Lab-on-Chip System" class="project-image">
-                    <div class="project-content">
-                        <h3>Integrated Lab-on-Chip Sensing System</h3>
-                        <p>Engineered MEMS biosensor on glass with Heidelberg DWL and E-beam evaporation. Optimized ITO thin-film via 27-run DOE, validated Ti/Pt adhesion using SEM and AFM.</p>
-                        <div class="project-tech">
-                            <span class="tech-chip">MEMS</span>
-                            <span class="tech-chip">DOE</span>
-                            <span class="tech-chip">SEM/AFM</span>
-                        </div>
-                        <p class="project-outcome">✓ Yield: 40% → 95% · 85% Transparency</p>
-                    </div>
-                </article>
-                
-                <article class="project-card">
-                    <img src="./layout_and_benchtop_evidence_1.png" alt="Mixed-Signal PCB Design" class="project-image">
-                    <div class="project-content">
-                        <h3>Mixed-Signal PCB Design & Layout</h3>
-                        <p>Designed multi-layer PCB in Altium Designer featuring isolated analog signal paths, guard rings, and ground plane partitioning for EMI shielding. IPC-compliant footprints with DFM analysis.</p>
-                        <div class="project-tech">
-                            <span class="tech-chip">Altium Designer</span>
-                            <span class="tech-chip">Multi-layer PCB</span>
-                            <span class="tech-chip">DFM/DRC</span>
-                        </div>
-                        <p class="project-outcome">✓ First-pass fabrication · Zero defects</p>
-                    </div>
-                </article>
-                
-                <article class="project-card">
-                    <img src="./layout_and_benchtop_evidence_2.png" alt="Hardware Validation" class="project-image">
-                    <div class="project-content">
-                        <h3>Hardware Validation & Signal Integrity</h3>
-                        <p>Conducted comprehensive hardware validation using Keysight oscilloscopes and Vector Network Analyzer. Achieved 99% correlation between ANSYS HFSS simulation and measured frequency response.</p>
-                        <div class="project-tech">
-                            <span class="tech-chip">Oscilloscope</span>
-                            <span class="tech-chip">VNA</span>
-                            <span class="tech-chip">ANSYS HFSS</span>
-                        </div>
-                        <p class="project-outcome">✓ 99% sim-to-measured correlation</p>
-                    </div>
-                </article>
             </div>
         </div>
     </section>
@@ -819,6 +780,50 @@
             </div>
             
             <div class="pub-list">
+                <div class="pub-item">
+                    <span class="pub-year">2026</span>
+                    <div class="pub-content">
+                        <h4>Microfabricated On-Chip pH Sensors for Continuous Potentiometric Measurements for Organs-on-a-Chip</h4>
+                        <p class="pub-authors"><strong>S. Tidke (First Author)</strong>, J. Chang, E. Heiser, S. Rajaraman</p>
+                        <div class="pub-venue-box">
+                            <span class="pub-venue">Hilton Head Workshop 2026</span>
+                            <span class="pub-prestige">✓ Elite MEMS Conference · Accepted</span>
+                        </div>
+                        <div class="pub-significance">
+                            <p class="pub-significance-label">Major Significance</p>
+                            <p>Continuous pH monitoring is a critical unmet need in organ-on-chip platforms — pH shifts signal cell stress, metabolic changes, and drug toxicity before any other marker. This work demonstrates microfabricated on-chip potentiometric pH sensors integrated directly into organ-on-chip platforms, enabling real-time, label-free monitoring of cellular microenvironments. The approach advances personalized medicine by allowing researchers to track live cell physiology during drug screening experiments.</p>
+                            <div class="pub-keywords">
+                                <span class="pub-keyword">pH Sensing</span>
+                                <span class="pub-keyword">Potentiometric</span>
+                                <span class="pub-keyword">Organ-on-Chip</span>
+                                <span class="pub-keyword">MEMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-year">2026</span>
+                    <div class="pub-content">
+                        <h4>Silane-Interlayer Engineering for Electron-Beam Deposited SiO₂ Thin Films on Polycarbonate for In Vitro Bioelectronic Devices</h4>
+                        <p class="pub-authors"><strong>S. Tidke (First Author)</strong>, J. Chang, S. Mittal, S. Rajaraman</p>
+                        <div class="pub-venue-box">
+                            <span class="pub-venue">Materials Letters (Elsevier)</span>
+                            <span class="pub-prestige">✓ Peer-Reviewed Journal · In Preparation</span>
+                        </div>
+                        <div class="pub-significance">
+                            <p class="pub-significance-label">Major Significance</p>
+                            <p>Flexible and polymer-based biosensors are critical for next-generation wearable and implantable diagnostics, but thin-film delamination on polymer substrates remains a major yield-limiting failure mode. This work systematically identifies optimal silane interlayer chemistry (GPTMS) to achieve crack-free SiO₂ adhesion on polycarbonate, directly enabling scalable manufacturing of 3D microelectrode arrays for neural and organ-level biosensing applications.</p>
+                            <div class="pub-keywords">
+                                <span class="pub-keyword">Thin Film Adhesion</span>
+                                <span class="pub-keyword">Silane Chemistry</span>
+                                <span class="pub-keyword">Polycarbonate</span>
+                                <span class="pub-keyword">Bioelectronics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="pub-item">
                     <span class="pub-year">2025</span>
                     <div class="pub-content">
@@ -938,6 +943,80 @@
         </div>
     </section>
 
+    <!-- MENTORING -->
+    <section class="mentoring bg-alt" id="mentoring" style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Training & Impact</p>
+                <h2 class="section-title">Mentoring & Technology Transfer</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 40px;">
+
+                <!-- Card 1: Student Mentoring -->
+                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: 14px; padding: 28px; border-top: 4px solid var(--navy);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                        <span style="font-size: 1.6rem;">🎓</span>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin: 0; color: var(--navy-dark);">Student Mentoring</h4>
+                            <p style="font-size: 0.82rem; color: var(--gray-500); margin: 2px 0 0 0;">UCF NBSS Lab · 2023–Present</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.93rem; color: var(--gray-700); line-height: 1.7; margin-bottom: 14px;">
+                        Trained <strong>Omar Cepeda</strong> (PhD, Biomedical Engineering) from scratch in DWL photolithography, e-beam evaporation (Ti/Pt/ITO), and RIE plasma processing — he now independently fabricates multi-layer MEA prototypes.
+                    </p>
+                    <p style="font-size: 0.93rem; color: var(--gray-700); line-height: 1.7; margin-bottom: 14px;">
+                        Supervised <strong>5 undergraduate researchers</strong>:
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px;">
+                        <span style="background: #eef2ff; color: var(--navy); padding: 4px 11px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">NSF REU · Sonali Mittal</span>
+                        <span style="background: #eef2ff; color: var(--navy); padding: 4px 11px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">NSF REU · Lia Garibay</span>
+                        <span style="background: var(--gray-100); color: var(--gray-700); padding: 4px 11px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Maria</span>
+                        <span style="background: var(--gray-100); color: var(--gray-700); padding: 4px 11px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Joseph</span>
+                        <span style="background: var(--gray-100); color: var(--gray-700); padding: 4px 11px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Elizabeth</span>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; margin: 0;">
+                        Mentees contributed to silane interlayer characterization, ITO optimization, and electrochemical pipelines — results presented at lab reviews and included in published manuscripts and NSF-sponsored posters.
+                    </p>
+                </div>
+
+                <!-- Card 2: Technology Transfer -->
+                <div style="background: var(--white); border: 1px solid var(--gray-200); border-radius: 14px; padding: 28px; border-top: 4px solid var(--navy);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                        <span style="font-size: 1.6rem;">🔗</span>
+                        <div>
+                            <h4 style="font-size: 1.05rem; margin: 0; color: var(--navy-dark);">Multi-Institutional Technology Transfer</h4>
+                            <p style="font-size: 0.82rem; color: var(--gray-500); margin: 2px 0 0 0;">Research Collaboration Lead</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="padding: 14px 16px; background: var(--gray-50); border-radius: 8px; border-left: 3px solid var(--navy);">
+                            <p style="font-size: 0.85rem; font-weight: 700; color: var(--navy-dark); margin: 0 0 4px 0;">WPI / SynVivo (Industry)</p>
+                            <p style="font-size: 0.88rem; color: var(--gray-700); margin: 0; line-height: 1.6;">Commercialized multimodal TEER/EIS sensing chips into the EVOM™ platform — laboratory prototype to deployed industrial instrument.</p>
+                        </div>
+                        <div style="padding: 14px 16px; background: var(--gray-50); border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <p style="font-size: 0.85rem; font-weight: 700; color: var(--navy-dark); margin: 0 0 4px 0;">UCF × Syracuse University</p>
+                            <p style="font-size: 0.88rem; color: var(--gray-700); margin: 0; line-height: 1.6;">Transferred electrical readout methodology and validated material compatibility for single-cell to tissue-scale microphysiological systems.</p>
+                        </div>
+                        <div style="padding: 14px 16px; background: var(--gray-50); border-radius: 8px; border-left: 3px solid #10b981;">
+                            <p style="font-size: 0.85rem; font-weight: 700; color: var(--navy-dark); margin: 0 0 4px 0;">UTMB — Embryo & Pregnancy Diagnostics</p>
+                            <p style="font-size: 0.88rem; color: var(--gray-700); margin: 0; line-height: 1.6;">Provided fabrication, oxygen-sensing, and device design expertise supporting clinical-translation organ-on-chip diagnostic pathway.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOPs banner -->
+            <div style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); border-radius: 12px; padding: 22px 28px; display: flex; align-items: center; gap: 20px;">
+                <span style="font-size: 1.8rem; flex-shrink: 0;">📋</span>
+                <div>
+                    <p style="color: var(--white); font-weight: 700; font-size: 0.98rem; margin: 0 0 4px 0;">Cleanroom SOP Standardization</p>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.88rem; margin: 0; line-height: 1.6;">Authored and standardized cleanroom SOPs covering DWL lithography, e-beam deposition, RIE etching, and lift-off — enabling reproducible device fabrication across team members and three collaborative institutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- GALLERY -->
     <section class="gallery bg-alt" id="gallery">
         <div class="container">
@@ -952,20 +1031,8 @@
                     <div class="gallery-label">Heidelberg DWL</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./altinum.jpg" alt="Altium Designer 2D Layout">
-                    <div class="gallery-label">Altium 2D PCB Layout</div>
-                </div>
-                <div class="gallery-item">
                     <img src="./AFM_image.jpg" alt="AFM Surface Analysis">
                     <div class="gallery-label">AFM Characterization</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./OPAM_schematic.jpg" alt="Op-Amp Schematic">
-                    <div class="gallery-label">Op-Amp Circuit Design</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./analog_acquisitions.jpg" alt="PCB Assembly">
-                    <div class="gallery-label">PCB Assembly</div>
                 </div>
                 <div class="gallery-item">
                     <img src="./project_electrodes.png" alt="Fabricated Electrodes">
@@ -992,13 +1059,13 @@
             <div class="contact-grid">
                 <div class="contact-text">
                     <p>
-                        Interested in discussing opportunities? I'd love to hear from you. Whether it's a process engineering role, research position, or collaboration, reach out!
+                        Interested in discussing opportunities? I'd love to hear from you. Whether it's a postdoctoral research position, process engineering role, or research collaboration, reach out!
                     </p>
                     
                     <div class="contact-links">
-                        <a href="mailto:surbhi.tidke@ucf.edu" class="contact-link">
+                        <a href="/cdn-cgi/l/email-protection#bac9cfc8d8d2d394ced3ded1dffacfd9dc94dfdecf" class="contact-link">
                             <span>✉️</span>
-                            <span>surbhi.tidke@ucf.edu</span>
+                            <span><span class="__cf_email__" data-cfemail="592a2c2b3b3130772d303d323c192c3a3f773c3d2c">[email&#160;protected]</span></span>
                         </a>
                         <a href="https://www.linkedin.com/in/surbhitidke/" target="_blank" class="contact-link">
                             <span>💼</span>
@@ -1014,10 +1081,11 @@
                 <div class="contact-info">
                     <h4>Location &amp; Availability</h4>
                     <div class="contact-detail"><span>📍</span><span>Orlando, FL | Open to Relocation</span></div>
+                    <div class="contact-detail"><span>🔬</span><span>Open to Postdoctoral Positions</span></div>
                     <div class="contact-detail"><span>🎓</span><span>F-1 STEM OPT &amp; CPT Eligible</span></div>
                     <div class="contact-detail"><span>💼</span><span>Seeking H-1B Sponsorship</span></div>
-                    <div class="contact-detail"><span>📅</span><span>PhD: Fall 2023 - Fall 2026</span></div>
-                    <div class="contact-detail"><span>🔬</span><span>NanoBioSensors &amp; Systems Lab</span></div>
+                    <div class="contact-detail"><span>📅</span><span>PhD Defense: Nov 2026</span></div>
+                    <div class="contact-detail"><span>🧪</span><span>NanoBioSensors &amp; Systems Lab, UCF</span></div>
                 </div>
             </div>
         </div>
@@ -1025,9 +1093,6 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Surbhi Tidke · PhD Candidate, UCF · Open to Process/MEMS/Hardware roles · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f4c4a4d5d57564b565b545a7f58525e5653115c5052">[email&#160;protected]</a></p>
+            <p>© 2026 Surbhi Tidke · PhD Candidate, UCF · Open to Postdoc & Process/MEMS/Biosensor roles · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f4c4a4d5d57564b565b545a7f58525e5653115c5052">[email&#160;protected]</a></p>
         </div>
-    </footer>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        w
+    </foo
